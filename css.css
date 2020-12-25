@@ -43,11 +43,11 @@ body {
 .form {
   position: relative;
   width: 100%;
-  height: 70px;
-  padding-bottom: 100px;
+  height: 80px;
 }
 
 .form__email {
+  position: relative;
   width: 300px;
   height: 50px;
   border-radius: 80px;
@@ -83,6 +83,26 @@ body {
   position: absolute;
   right: 17px;
   top: 15px;
+}
+
+.form__img-error {
+  position: absolute;
+  top: 13px;
+  right: 116px;
+  display: none;
+}
+.form__error {
+  font-size: 0.9rem;
+  text-align: left;
+  margin-left: 58px;
+  margin-top: 10px;
+  color: hsl(0, 93%, 68%);
+  display: none;
+}
+.attribution {
+  margin: 10px 0 10px 0;
+  font-size: 0.8rem;
+  text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .container {
@@ -132,5 +152,18 @@ body {
   }
   .form__arrow {
     right: 26px;
+  }
+  .form__error {
+    font-size: 0.9rem;
+    margin-left: 23px;
+    margin-top: 10px;
+    color: hsl(0, 93%, 68%);
+    display: none;
+  }
+  .form__img-error {
+    position: absolute;
+    top: 13px;
+    right: 86px;
+    display: none;
   }
 }
